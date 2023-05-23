@@ -4,6 +4,14 @@ function setup(){
 }
 
 function draw () {
-    background (200); // background color for whole canvas 
+    
+    if (mouseIsPressed) {
+        fill(0);
+    }
+        else {
+            fill(255);
+        }
+     // background color for whole canvas 
+    ellipse (mouseX, mouseY, 80, 80);
     
 }
